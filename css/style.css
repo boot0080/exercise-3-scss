@@ -1,29 +1,141 @@
-/* line 1, /Users/ariahboots/Desktop/Year Three/Web Development V/exercise-3-scss/scss/mixins */
+@font-face {
+  font-family: 'custom-font';
+  src: url('../font/custom-font.eot?44958944');
+  src: url('../font/custom-font.eot?44958944#iefix') format('embedded-opentype'), url('../font/custom-font.woff?44958944') format('woff'), url('../font/custom-font.ttf?44958944') format('truetype'), url('../font/custom-font.svg?44958944#fontello') format('svg');
+  font-weight: normal;
+  font-style: normal; }
+
+/* line 12, /Users/ariahboots/Desktop/Year Three/Web Development V/exercise-3-scss/scss/components/main */
+[class^="icon-"]:before, [class*=" icon-"]:before {
+  font-family: "custom-font";
+  font-style: normal;
+  font-weight: normal;
+  speak: none;
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  margin-right: 0.2em;
+  text-align: center;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1em;
+  margin-left: 0.2em; }
+
+/* line 28, /Users/ariahboots/Desktop/Year Three/Web Development V/exercise-3-scss/scss/components/main */
+.icon-trash-empty:before {
+  content: '\e800'; }
+
+/* line 29, /Users/ariahboots/Desktop/Year Three/Web Development V/exercise-3-scss/scss/components/main */
+.icon-comment-empty:before {
+  content: '\e801'; }
+
+/* line 30, /Users/ariahboots/Desktop/Year Three/Web Development V/exercise-3-scss/scss/components/main */
+.icon-mail:before {
+  content: '\e802'; }
+
+/* line 31, /Users/ariahboots/Desktop/Year Three/Web Development V/exercise-3-scss/scss/components/main */
+.icon-heart-empty:before {
+  content: '\e805'; }
+
+/* line 32, /Users/ariahboots/Desktop/Year Three/Web Development V/exercise-3-scss/scss/components/main */
+.icon-pencil:before {
+  content: '\e806'; }
+
+/* line 35, /Users/ariahboots/Desktop/Year Three/Web Development V/exercise-3-scss/scss/components/main */
 body {
   background-color: #00c6a7;
   color: #fff;
   margin: 0 auto;
   font: 1em 'Montserrat', sans-serif; }
 
-/* line 1, /Users/ariahboots/Desktop/Year Three/Web Development V/exercise-3-scss/scss/components/main */
-body {
-  background-color: #00c6a7;
-  font-family: 'Montserrat', sans-serif; }
+/* line 42, /Users/ariahboots/Desktop/Year Three/Web Development V/exercise-3-scss/scss/components/main */
+h1 {
+  font-family: 'Montserrat', sans-serif;
+  color: #fff;
+  letter-spacing: 0.03em;
+  font-size: 30px;
+  margin: 40px 0; }
 
-/*
-.secondary-btn{
-  @include button($secondary, $secondary-dark, #fff); 
-}
+/* line 50, /Users/ariahboots/Desktop/Year Three/Web Development V/exercise-3-scss/scss/components/main */
+.container {
+  padding-top: 20px;
+  text-align: center; }
 
-.border{
-  border: 1px solid #ccc; 
-  // you can nest elements/selectors to target them more specifically
-  p{
-    color: red;
-  }
-}
+/* line 55, /Users/ariahboots/Desktop/Year Three/Web Development V/exercise-3-scss/scss/components/main */
+a {
+  text-decoration: none;
+  color: #fff;
+  margin: 0 10px; }
 
-ul{
-  @extend .border;
-}
-*/
+/* line 61, /Users/ariahboots/Desktop/Year Three/Web Development V/exercise-3-scss/scss/components/main */
+.btn {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+  height: 53px;
+  border-radius: 6px;
+  -moz-border-radius: 6px;
+  -webkit-border-radius: 6px;
+  line-height: 30px;
+  font-size: 16px; }
+
+/* line 76, /Users/ariahboots/Desktop/Year Three/Web Development V/exercise-3-scss/scss/components/main */
+.btn span.icon, .btn span.title {
+  display: block;
+  position: relative;
+  line-height: 50px;
+  padding: 0 40px;
+  border-radius: 6px;
+  -moz-border-radius: 6px;
+  -webkit-border-radius: 6px;
+  width: 80px; }
+
+/* line 87, /Users/ariahboots/Desktop/Year Three/Web Development V/exercise-3-scss/scss/components/main */
+.btn span.left {
+  float: left;
+  border-radius: 6px 0 0 6px;
+  -moz-border-radius: 6px 0 0 6px;
+  -webkit-border-radius: 6px 0 0 6px;
+  width: 27px; }
+
+/* line 95, /Users/ariahboots/Desktop/Year Three/Web Development V/exercise-3-scss/scss/components/main */
+.btn span.right {
+  float: right;
+  border-radius: 0 6px 6px 0;
+  -moz-border-radius: 0 6px 6px 0;
+  -webkit-border-radius: 0 6px 6px 0; }
+
+/* line 102, /Users/ariahboots/Desktop/Year Three/Web Development V/exercise-3-scss/scss/components/main */
+.btn span.icon {
+  font-size: 27px;
+  background-color: #00967f;
+  box-shadow: 0 3px 0 0 #007261; }
+
+/* line 109, /Users/ariahboots/Desktop/Year Three/Web Development V/exercise-3-scss/scss/components/main */
+.btn span.title {
+  box-shadow: 0 3px 0 0 #f39c12;
+  background-color: #fcb74b; }
+
+/* line 115, /Users/ariahboots/Desktop/Year Three/Web Development V/exercise-3-scss/scss/components/main */
+.btn span.arrow-left, .btn span.arrow-right {
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-top: 25px solid transparent;
+  border-bottom: 25px solid transparent;
+  -webkit-transition: all 0.15s;
+  -transition: all 0.15s;
+  transition-property: left, right; }
+
+/* line 127, /Users/ariahboots/Desktop/Year Three/Web Development V/exercise-3-scss/scss/components/main */
+.btn.left span.arrow-right {
+  left: 0;
+  box-shadow: -10px 0 0 0 #00967f, -10px 3px 0 0 #007261;
+  border-left: 10px solid #00967f; }
+
+/* line 133, /Users/ariahboots/Desktop/Year Three/Web Development V/exercise-3-scss/scss/components/main */
+.btn:hover span.arrow-right {
+  left: 10px; }

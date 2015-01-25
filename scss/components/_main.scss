@@ -14,50 +14,33 @@
   font-style: normal;
   font-weight: normal;
   speak: none;
- 
   display: inline-block;
   text-decoration: inherit;
   width: 1em;
   margin-right: .2em;
   text-align: center;
-  /* opacity: .8; */
- 
-  /* For safety - reset parent styles, that can break glyph codes*/
   font-variant: normal;
   text-transform: none;
-     
-  /* fix buttons height, for twitter bootstrap */
   line-height: 1em;
- 
-  /* Animation center compensation - margins should be symmetric */
-  /* remove if not needed */
   margin-left: .2em;
- 
-  /* you can be more comfortable with increased icons size */
-  /* font-size: 120%; */
- 
-  /* Uncomment for 3D effect */
-  /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
 }
  
-.icon-trash-empty:before { content: '\e800'; } /* '' */
-.icon-comment-empty:before { content: '\e801'; } /* '' */
-.icon-mail:before { content: '\e802'; } /* '' */
-.icon-heart-empty:before { content: '\e805'; } /* '' */
-.icon-pencil:before { content: '\e806'; } /* '' */
+.icon-trash-empty:before { content: '\e800'; }
+.icon-comment-empty:before { content: '\e801'; }
+.icon-mail:before { content: '\e802'; }
+.icon-heart-empty:before { content: '\e805'; }
+.icon-pencil:before { content: '\e806'; } 
 
-
-/* Buttons and page styles - */
 
 body {
-  background-color: #00c6a7;
-  color:#fff;
+  background-color: $background;
+  color: $text-color;
   margin:0 auto;
-  font: 1em 'Montserrat',sans-serif;
+  font: 1em $montserrat;
 }
 
 h1 {
-  font-family: 'Montserrat', sans-serif;
+  font-family: $montserrat;
   color: $text-color;
   letter-spacing: .03em;
   font-size: 30px;
@@ -71,7 +54,7 @@ h1 {
 
 a {
   text-decoration:none;
-  color:#fff;
+  color: $text-color;
   margin:0 10px;
 }
 
@@ -93,7 +76,8 @@ a {
 .btn span.icon,.btn span.title {
   display:block;
   position:relative;
-  line-height:50px;padding:0 40px;
+  line-height:50px;
+  padding:0 40px;
   border-radius:6px;
   -moz-border-radius:6px;
   -webkit-border-radius:6px;
@@ -103,7 +87,8 @@ a {
 .btn span.left {
   float:left;
   border-radius:6px 0 0 6px;
-  -moz-border-radius:6px 0 0 6px;-webkit-border-radius:6px 0 0 6px;
+  -moz-border-radius:6px 0 0 6px;
+  -webkit-border-radius:6px 0 0 6px;
   width: 27px;
 }
 
@@ -116,16 +101,15 @@ a {
 
 .btn span.icon {
   font-size: 27px;
-  background-color:#00967f;
-  -webkit-box-shadow:0 3px 0 0 #007261;
-  box-shadow:0 3px 0 0 #007261;
-  text-shadow:0px 1px 1px #888;
+  background-color: $icon-button;
+  -webkit-box-shadow:0 3px 0 0 $icon-button-shadow;
+  box-shadow:0 3px 0 0 $icon-button-shadow;
 }
 
 .btn span.title {
-  -webkit-box-shadow:0 3px 0 0 #f39c12;
-  box-shadow:0 3px 0 0 #f39c12;
-  background-color:#fcb74b;
+  -webkit-box-shadow:0 3px 0 0 $text-button-shadow;
+  box-shadow:0 3px 0 0 $text-button-shadow;
+  background-color: $text-button;
 }
 
 .btn span.arrow-left,.btn span.arrow-right {
@@ -134,15 +118,16 @@ a {
   height:0;
   border-top:25px solid transparent;
   border-bottom:25px solid transparent;
-  -webkit-transition:all .15s;-transition:all .15s;
+  -webkit-transition:all .15s;
+  -transition:all .15s;
   -webkit-transition-property:left,right;
   transition-property:left,right;
 }
 
 .btn.left span.arrow-right {
-  left:0;-webkit-box-shadow:-10px 0 0 0 #00967f,-10px 3px 0 0 #007261;
-  box-shadow:-10px 0 0 0 #00967f,-10px 3px 0 0 #007261;
-  border-left:10px solid #00967f;
+  left:0;-webkit-box-shadow:-10px 0 0 0 $icon-button, -10px 3px 0 0 $icon-button-shadow;
+  box-shadow:-10px 0 0 0 $icon-button,-10px 3px 0 0 $icon-button-shadow;
+  border-left:10px solid $icon-button;
 }
 
 .btn:hover span.arrow-right {
