@@ -1,0 +1,30 @@
+/* line 1, /Users/ariahboots/Desktop/Year Three/Web Development V/exercise-3-scss/scss/mixins */
+body {
+  background-color: #00c6a7;
+  color: #fff;
+  margin: 0 auto;
+  font: 1em 'Montserrat', sans-serif; }
+
+/* line 1, /Users/ariahboots/Desktop/Year Three/Web Development V/exercise-3-scss/scss/components/main */
+body {
+  background-color: #00c6a7;
+  font-family: 'Montserrat', sans-serif; }
+
+/*
+.secondary-btn{
+  @include button($secondary, $secondary-dark, #fff); 
+}
+
+.border{
+  border: 1px solid #ccc; 
+  // you can nest elements/selectors to target them more specifically
+  p{
+    color: red;
+  }
+}
+
+ul{
+  @extend .border;
+}
+*/
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInN0eWxlLmNzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQSxpR0FBZ0c7QUFDaEc7RUFDRSwyQkFBMEI7RUFDMUIsYUFBWTtFQUNaLGdCQUFlO0VBQ2Ysb0NBQW1DLEVBQUU7O0FBRXZDLDBHQUF5RztBQUN6RztFQUNFLDJCQUEwQjtFQUMxQix1Q0FBc0MsRUFBRTs7QUFFMUM7Ozs7Ozs7Ozs7Ozs7Ozs7R0FnQkUiLCJmaWxlIjoic3R5bGUtZGlzdC5jc3MiLCJzb3VyY2VzQ29udGVudCI6WyIvKiBsaW5lIDEsIC9Vc2Vycy9hcmlhaGJvb3RzL0Rlc2t0b3AvWWVhciBUaHJlZS9XZWIgRGV2ZWxvcG1lbnQgVi9leGVyY2lzZS0zLXNjc3Mvc2Nzcy9taXhpbnMgKi9cbmJvZHkge1xuICBiYWNrZ3JvdW5kLWNvbG9yOiAjMDBjNmE3O1xuICBjb2xvcjogI2ZmZjtcbiAgbWFyZ2luOiAwIGF1dG87XG4gIGZvbnQ6IDFlbSAnTW9udHNlcnJhdCcsIHNhbnMtc2VyaWY7IH1cblxuLyogbGluZSAxLCAvVXNlcnMvYXJpYWhib290cy9EZXNrdG9wL1llYXIgVGhyZWUvV2ViIERldmVsb3BtZW50IFYvZXhlcmNpc2UtMy1zY3NzL3Njc3MvY29tcG9uZW50cy9tYWluICovXG5ib2R5IHtcbiAgYmFja2dyb3VuZC1jb2xvcjogIzAwYzZhNztcbiAgZm9udC1mYW1pbHk6ICdNb250c2VycmF0Jywgc2Fucy1zZXJpZjsgfVxuXG4vKlxuLnNlY29uZGFyeS1idG57XG4gIEBpbmNsdWRlIGJ1dHRvbigkc2Vjb25kYXJ5LCAkc2Vjb25kYXJ5LWRhcmssICNmZmYpOyBcbn1cblxuLmJvcmRlcntcbiAgYm9yZGVyOiAxcHggc29saWQgI2NjYzsgXG4gIC8vIHlvdSBjYW4gbmVzdCBlbGVtZW50cy9zZWxlY3RvcnMgdG8gdGFyZ2V0IHRoZW0gbW9yZSBzcGVjaWZpY2FsbHlcbiAgcHtcbiAgICBjb2xvcjogcmVkO1xuICB9XG59XG5cbnVse1xuICBAZXh0ZW5kIC5ib3JkZXI7XG59XG4qLyJdfQ== */
