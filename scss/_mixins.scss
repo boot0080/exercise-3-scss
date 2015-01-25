@@ -1,0 +1,16 @@
+
+@mixin button{
+  box-sizing:border-box;
+  -moz-box-sizing:border-box;
+  -webkit-box-sizing:border-box;
+  position:relative;
+  display:inline-block;
+  overflow:hidden;
+  height:53px;
+  border-radius:6px;
+  -moz-border-radius:6px;
+  -webkit-border-radius:6px;
+  line-height:30px;
+  font-size:16px;
+}
+
